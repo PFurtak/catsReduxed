@@ -1,32 +1,15 @@
-import {
-  ACTION_NAP,
-  ACTION_EAT,
-  ACTION_PLAY,
-  ACTION_NAME,
-} from './reducers/types';
+import { ACTION_SET_ACTIVITY, ACTION_SET_NAME } from './reducers/types';
 
-export const nap = () => {
-  return {
-    type: ACTION_NAP,
-  };
-};
-export const eat = () => {
-  return {
-    type: ACTION_EAT,
-  };
-};
+export const setActivity = (activity) => ({
+  type: ACTION_SET_ACTIVITY,
+  payload: {
+    activity,
+  },
+});
 
-export const play = () => {
-  return {
-    type: ACTION_PLAY,
-  };
-};
-
-export const name = () => {
-  return {
-    type: ACTION_NAME,
-    payload: {
-      name: '',
-    },
-  };
-};
+export const setName = (name) => ({
+  type: ACTION_SET_NAME,
+  payload: {
+    name,
+  },
+});
