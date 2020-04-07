@@ -1,4 +1,9 @@
-import { ACTION_NAP, ACTION_EAT, ACTION_PLAY } from './reducers/types';
+import {
+  ACTION_NAP,
+  ACTION_EAT,
+  ACTION_PLAY,
+  ACTION_NAME,
+} from './reducers/types';
 
 export const nap = () => {
   return {
@@ -14,5 +19,14 @@ export const eat = () => {
 export const play = () => {
   return {
     type: ACTION_PLAY,
+  };
+};
+
+export const name = () => {
+  return {
+    type: ACTION_NAME,
+    payload: {
+      name: '',
+    },
   };
 };
