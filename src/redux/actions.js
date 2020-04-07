@@ -1,4 +1,4 @@
-import { ACTION_NAP, ACTION_EAT, ACTION_PLAY } from './types';
+import { ACTION_NAP, ACTION_EAT, ACTION_PLAY } from './reducers/types';
 
 export const nap = () => {
   return {
